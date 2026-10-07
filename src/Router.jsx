@@ -6,7 +6,6 @@ import Nav from "./Components/Nav"
 import Duvidas from "./Pages/Duvidas"
 import Usuarios from "./Pages/Usuarios"
 import Cadastro from "./Pages/Cadastro"
-import News from "./Pages/News"
 
 export default function Router() {
   return (
@@ -17,7 +16,6 @@ export default function Router() {
             <Route path="/tecnicas" element={<Tecnicas/>}/>
             <Route path="/usuarios" element={<Usuarios/>}/>
             <Route path="/cadastro" element={<Cadastro/>}/>
-            <Route path="/news" element={<News/>}/>
             <Route path="*" element={<NotFound/>}/>
             <Route path="/duvidas" element={<Duvidas/>}/>
         </Routes>

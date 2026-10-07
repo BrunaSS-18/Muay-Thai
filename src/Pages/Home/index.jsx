@@ -21,19 +21,19 @@ export default function index() {
         <Box
           title="Titulo do componente"
           description="Este é um paragrafo de exemplo para o componente"
-          img={img1}
+          img={"../../assets/img/icons/tik-tok.png"}
         />
 
         <Box
           title="Titulo do componente dois"
           description="Este é um paragrafo de exemplo"
-          img={img2}
+          img={"../../assets/img/icons/tik-tok.png"}
         />
 
         <Box
           title="Titulo do componente tres"
           description="Este é um paragrafo de exemplo"
-          img={img2}
+          img={"../../assets/img/icons/tik-tok.png"}
         />
         
       </section>

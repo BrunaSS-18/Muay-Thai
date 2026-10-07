@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import imgLogo from "../../assets/img/logoipsum.png"
+import imgLogo from "../../assets/imgLogo.jpg"
 import img1 from "../../assets/img/icons/instagram.png"
 import img2 from "../../assets/img/icons/facebook.png"
 import img3 from "../../assets/img/icons/tik-tok.png"
