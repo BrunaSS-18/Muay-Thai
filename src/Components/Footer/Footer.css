@@ -1,0 +1,25 @@
+footer{
+    background-color: #b6c4cf;
+}
+
+.footer{
+    font-size: 18px;
+    margin: 5px 0;
+    color: #6c757d;
+    text-align: center;
+}
+
+.logo{
+    width: 5%;
+    height: auto;
+}
+
+.icon img{
+    width: 2%;
+    margin: 5px;
+}
+
+.footerBy{
+    background-color: black;
+    font-size: 15px;
+}
