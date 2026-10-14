@@ -23,17 +23,18 @@ export default function index() {
     }
 
   return (
-    <section className="container usuarios">
-      <h1> Lista de Usuarios</h1>
+    <section className="containerUsuarios">
+      <p className="descricaoUsuarios">Membros ativos na jornada do respeito, foco e evolução.</p>
+      <h1>LISTA DE USUÁRIOS</h1>
 
       {usuarios.map((usuario) => (
         <article className="content-usuarios" key={usuario.id}>
             
-            <strong>Nome: {usuario.nome} </strong>
+            <strong>Nome: </strong>{usuario.nome}
             <br/>
-            <strong>Telefone: 11 {usuario.telefone} </strong>
+            <strong>Telefone: </strong> 11 {usuario.telefone}
             <br/>
-            <strong>Email: {usuario.email} </strong>
+            <strong>Email: </strong> {usuario.email}
             <br/>
 
             <button 
@@ -41,7 +42,6 @@ export default function index() {
               onClick={() => deleteUsuarios(usuario.id)}>
               Deletar
             </button>
-            <hr/>
         </article>
       ))}
 

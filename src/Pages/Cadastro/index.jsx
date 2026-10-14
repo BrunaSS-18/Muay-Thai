@@ -56,7 +56,8 @@ export default function index() {
 
   return (
     <main className='container'>
-        <h1>Cadastro de Usuários</h1>
+        <p className='descricaoCadastro'>Faça parte da nossa comunidade e dê o primeiro passo no tatami</p>
+        <h1>CADASTRE-SE</h1>
         <form className='formCadastro' onSubmit={handleSubmit}>
             <article className='form-control'>
                 <label htmlFor='nome'>Nome</label>
@@ -88,7 +89,7 @@ export default function index() {
                 />
             </article>
 
-            <button className='btnCadastro' type="submit">Cadastrar</button>
+            <button className='btnCadastro' type="submit">Confirmar</button>
 
             <ToastContainer/>
         </form>

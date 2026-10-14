@@ -1,95 +1,41 @@
 {
   "usuarios": [
     {
-      "nome": "Caio",
-      "telefone": "44444444",
-      "email": "caio@gmail.com",
-      "id": "wUNRrfucZ6M"
-    },
-    {
-      "nome": "Juliana",
-      "telefone": "55555555",
-      "email": "juliana@gmail.com",
-      "id": "rLA0QUWkjZk"
-    },
-    {
-      "nome": "bruna",
-      "telefone": "11943196323",
-      "email": "bruna@gmail.com",
-      "id": "pHrLbOZbtck"
-    },
-    {
       "nome": "kauana ",
-      "telefone": "11943196323",
+      "telefone": "943196323",
       "email": "kauana@gmail.com",
       "id": "zU1QB9bez6o"
     },
     {
-      "nome": "luiza",
-      "email": "luiza@gmail.com",
-      "id": "U3yuBmArB7w"
-    },
-    {
       "nome": "bruna",
+      "telefone": "943196323",
       "email": "bruna@gmail.com",
       "id": "EoVIkRa59hQ"
+    },
+    {
+      "nome": "luiza",
+      "telefone": "934597275",
+      "email": "luiza@email.com",
+      "id": "jD7kfUpaCRQ"
     }
   ],
   "duvidas": [
     {
       "id": "1",
-      "pergunta": "O que é JSON Server?",
-      "resposta": "JSON Server é uma ferramenta que permite ..."
+      "pergunta": "Por que os lutadores amarram uma faixa no braço?",
+      "resposta": " Foi adaptado para funcionar de forma semelhante às faixas de outras artes marciais (como o Judô ou o Jiu-Jitsu). Suas diferentes cores e trançados indicam o nível de graduação, experiência e evolução"
     },
     {
       "id": "2",
-      "pergunta": "Como instalar o JSON Server?",
-      "resposta": "Você pode instalar o JSON Server usando o npm com ..."
+      "pergunta": "É verdade que o Muay Thai usa os cotovelos e joelhos como armas principais? Por quê?",
+      "resposta": "Sim, por isso o Muay Thai é conhecido mundialmente como Arte das Oito Armas. Enquanto a maioria das artes marciais de trocação foca apenas nos dois punhos e nos dois pés, o Muay Thai adiciona os dois cotovelos e os dois joelhos ao arsenal. Essas articulações funcionam como armas de curto alcance devastadoras: o cotovelo atua com a precisão e o corte de uma lâmina, enquanto a joelhada gera o impacto perfurante de uma lança."
     },
     {
       "id": "3",
-      "pergunta": "Posso usar JSON Server em produção?",
-      "resposta": "JSON Server é ótimo para desenvolvimento ..."
+      "pergunta": "Por que os lutadores fazem barulho ou soltam um grito (soltar o ar) ao dar cada golpe?",
+      "resposta": "O som que os praticantes fazem (como um sopro forte) serve para expulsor o ar dos pulmões no momento do impacto. Isso evita que o atleta fique sem fôlego caso receba um contragolpe enquanto ataca, além de ajudar a contrair a musculatura do abdómen para gerar mais força e manter a guarda firme."
     }
   ],
-  "sobre": [
-    {
-      "id": "1",
-      "titulo": "Foi criado pelo Facebook (Meta)",
-      "descricao": "O React foi desenvolvido por engenheiros do Facebook e lançado publicamente em 2013. Atualmente, é mantido pela Meta e por uma comunidade de desenvolvedores."
-    },
-    {
-      "id": "2",
-      "titulo": "O React não é um framework completo",
-      "descricao": "Diferentemente de frameworks como Angular, o React é uma biblioteca JavaScript focada principalmente na criação de interfaces de usuário. Outras funcionalidades, como roteamento, podem ser adicionadas por bibliotecas externas."
-    },
-    {
-      "id": "3",
-      "titulo": "Utiliza componentes reutilizáveis",
-      "descricao": "No React, a interface é dividida em pequenos componentes, como botões, menus e cards. Isso permite reutilizar partes do código em diferentes páginas e projetos."
-    },
-    {
-      "id": "4",
-      "titulo": "Popularizou o conceito de Virtual DOM",
-      "descricao": "O React utiliza uma representação virtual da estrutura da página para ajudar a atualizar a interface de maneira eficiente, evitando alterações desnecessárias no DOM real."
-    },
-    {
-      "id": "5",
-      "titulo": "Pode ser usado além de páginas web Com o React Native",
-      "descricao": "Os desenvolvedores podem criar aplicativos para Android e iOS utilizando conceitos e componentes semelhantes aos do React, compartilhando parte da lógica entre plataformas."
-    }
-  ],
-  "news": [
-    {
-      "nome": "bruna",
-      "email": "bruna@gmail.com",
-      "id": "y5wZQRX0liw"
-    },
-    {
-      "nome": "kauana ",
-      "email": "kauana@gmail.com",
-      "id": "QzcpdXPoQ18"
-    }
-  ],
+  
   "$schema": "./node_modules/json-server/schema.json"
 }

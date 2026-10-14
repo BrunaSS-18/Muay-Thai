@@ -1,40 +1,51 @@
 import Box from "../../Components/Box"
+import img1 from "../../assets/img/icons/tik-tok.png"
+import "./Home.css"
 
 export default function index() {
   return (
-    <main className='container'>
-      <section className='d-flex secao'>
-        <img src={'https://hubconteudo.dasa.com.br/wp-content/uploads/2022/11/muay_thai.jpg'} alt="Muay Thai" className='imgFundoHome'/>
-
-        <div className='home'>
-          <h1 className='tituloHome'>Muay Thai</h1>
-          <p className='descricaoHome'>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <main className='container-principal'>
+      <section className='secao-home'>
+        
+        <div className='hero-banner'>
+          <img 
+            src={'https://hubconteudo.dasa.com.br/wp-content/uploads/2022/11/muay_thai.jpg'} 
+            alt="Muay Thai" 
+            className='imgFundoHome'
+          />
+          <div className='home'>
+            <h1 className='tituloHome'>Muay Thai</h1>
+            <p className='descricaoHome'>A Arte das Oito Armas: disciplina, força e superação para transformar o seu corpo e a sua mente.</p>
+          </div>
         </div>
 
         <div className='paragrafoHome'>
-          <p className='paragrafoUm'>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className='paragrafoDois'>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className='paragrafoUm'>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className='paragrafoDois'>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className='paragrafoUm'>Transforme o seu corpo, fortaleça a sua mente e domine a arte do Muay Thai</p>
+          <p className='paragrafoDois'>Aulas completas para todos os níveis, do iniciante ao avançado, com foco na técnica, saúde e disciplina.</p>
+          
+          <p className='paragrafoUm'>Disciplina, Técnica e Superação</p>
+          <p className='paragrafoDois'>"O Muay Thai não ensina você a buscar o combate, mas a não se curvar quando ele for inevitável. Quando você pisa no tatame ou sobe no ringue, não está ali para provar algo aos outros, mas para confrontar seus próprios medos, sua preguiça e suas incertezas. A arte das oito armas é a disciplina de transformar o corpo em fortaleza e a mente em escudo."</p>
         </div>
 
-        <Box
-          title="Titulo do componente"
-          description="Este é um paragrafo de exemplo para o componente"
-          img={"../../assets/img/icons/tik-tok.png"}
-        />
+        <div className='container-boxes'>
+          <Box
+            title=""
+            description="Não lute para ser melhor do que o seu adversário, lute para ser mais forte do que a sua melhor desculpa."
+            img={img1}
+          />
 
-        <Box
-          title="Titulo do componente dois"
-          description="Este é um paragrafo de exemplo"
-          img={"../../assets/img/icons/tik-tok.png"}
-        />
+          <Box
+            title=""
+            description="A canelada calejada não vem do talento, vem de milhares de repetições no silêncio do treino diário."
+            img={img1}
+          />
 
-        <Box
-          title="Titulo do componente tres"
-          description="Este é um paragrafo de exemplo"
-          img={"../../assets/img/icons/tik-tok.png"}
-        />
+          <Box
+            title=""
+            description="Mais do que calejamento físico, a Arte das Oito Armas constrói uma mente blindada contra a desistência."
+            img={img1}
+          />
+        </div>
         
       </section>
     </main>

@@ -7,6 +7,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
   height: fit-content;
+  
 }
 
 .image {
@@ -16,6 +17,7 @@
 }
 
 .title-box {
+  font-family: arial, sans-serif;
   font-size: 18px;
   margin: 10px 0;
   color: #333;

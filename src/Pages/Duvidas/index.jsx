@@ -2,8 +2,9 @@ import "./Duvidas.css"
 import "../../global.css"
 import { useState, useEffect } from 'react'
 
-export default function index() {
+export default function Index() {
     const [duvidas, setDuvidas] = useState([])
+    const [textoDuvida, setTextoDuvida] = useState('') // Estado do campo de texto
 
     useEffect(() => {
         fetch("http://localhost:3000/duvidas")
@@ -12,25 +13,51 @@ export default function index() {
             .catch((error) => console.error(error));
     }, [])
 
-  return (
-    <section className="duvida-container">
-        <div className="duvida-section">
-            <h2>Perguntas Frequentes</h2>
-            
-        {duvidas.map((duvida) => (
-            <div className="duvida-item" key={duvida.id}>
-                <p className="pergunta">{duvida.pergunta}</p>
-                <p className="resposta">{duvida.resposta}</p>
-            </div>
-        ))} 
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-        </div>  
+        if (!textoDuvida.trim()) return;
 
-        <form className="duvida-form" onSubmit={(e) => e.preventDefault()}>
-            <label className="duvida" for="duvida">Digite sua dúvida:</label>
-            <textarea id="duvida" name="duvida" rows="5" cols="40" required></textarea>
-            <button type="submit" className="enviar">Enviar</button>
-        </form>
-    </section>
-  )
+        fetch("http://localhost:3000/duvidas", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ pergunta: textoDuvida, resposta: "Aguardando resposta..." })
+        })
+        .then((res) => res.json())
+        .then((novaDuvida) => {
+            setDuvidas([...duvidas, novaDuvida]);
+            setTextoDuvida(''); // LIMPA O TEXTO AQUI
+        })
+        .catch((err) => console.error(err));
+    }
+
+    return (
+        <section className="duvida-container">
+            <div className="duvida-section">
+                <p className="descricaoDuvidas">A sua central de ajuda e esclarecimentos</p>
+                <h1>DÚVIDAS</h1>
+                
+                {duvidas.map((duvida) => (
+                    <div className="duvida-item" key={duvida.id}>
+                        <p className="pergunta">{duvida.pergunta}</p>
+                        <p className="resposta">{duvida.resposta}</p>
+                    </div>
+                ))} 
+            </div>  
+
+            <form className="duvida-form" onSubmit={handleSubmit}>
+                <label className="duvida" htmlFor="duvida">Digite sua dúvida sobre o Muay thai</label>
+                <textarea 
+                    id="duvida" 
+                    name="duvida" 
+                    rows="5" 
+                    cols="40" 
+                    required
+                    value={textoDuvida} // Conecta ao state
+                    onChange={(e) => setTextoDuvida(e.target.value)} // Atualiza o state ao digitar
+                ></textarea>
+                <button type="submit" className="enviar">Enviar</button>
+            </form>
+        </section>
+    )
 }

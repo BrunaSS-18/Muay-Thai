@@ -1,25 +1,66 @@
-footer{
-    background-color: #b6c4cf;
+.footer-container {
+    width: 100%;
+    background-color: #ebebec;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 
-.footer{
-    font-size: 18px;
-    margin: 5px 0;
-    color: #6c757d;
+.footer-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 40px;                   
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-rede {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-rede {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.redeSocial {
+    color: #050505;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footerBy {
+    background-color: #121214;
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
 }
 
-.logo{
-    width: 5%;
-    height: auto;
-}
-
-.icon img{
-    width: 2%;
-    margin: 5px;
-}
-
-.footerBy{
-    background-color: black;
-    font-size: 15px;
+.footerBy p {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
 }

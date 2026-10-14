@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descricaoTecnicas {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #8b4033;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.tituloTecnicas {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fffdfd;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #8b4033;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+
+.box-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tituloPrincipal {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #8b4033;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Titan One', cursive;
+}
+
+.box-treinamento-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanhos iguais */
+    gap: 20px;                             /* Espaçamento entre os cartões */
+    width: 100%;
+    max-width: 900px;                      /* Largura máxima centralizada */
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

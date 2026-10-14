@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+.container-principal {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.secao-home {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.imgFundoHome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home {
+  position: relative;
+  z-index: 2;
+  padding-left: 40px;
+  max-width: 380px;
+}
+
+.tituloHome {
+  font-family: 'Titan One', cursive, sans-serif;
+  color: #8b4033;
+  font-size: 3.2rem;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.descricaoHome {
+  color: #8b4033;
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paragrafoHome {
+  text-align: center;
+  max-width: 850px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.paragrafoUm {
+  font-family: 'Titan One', cursive, sans-serif;
+  color: #050505;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.paragrafoDois {
+  color: #8b4033;
+  font-weight: 700;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.container-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.container-boxes > div,
+.container-boxes .container-box {
+  background-color: #ebebeb;
+  border-radius: 28px;
+  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-boxes img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 12px;
+}
+
+.container-boxes p {
+  color: #8b4033;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 .duvida-container {
     max-width: 700px;
     margin: 40px auto;
@@ -8,27 +10,43 @@
     min-height: 75vh;
 }
 
-.duvida-section h2 {
-  color: rgb(42, 42, 110);
+.descricaoDuvidas {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #8b4033;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.duvida-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.duvida-section h1 {
+  color: #8b4033;
   margin-bottom: 16px;
   font-size: 1.8rem;
   text-align: center;
 }
 
 .duvida-item {
-  background-color: #f8f9fa;
+  background-color: #ebebec;
   padding: 16px;
   border-radius: 8px;
 }
 
 .pergunta {
+  color: #050505;
   font-weight: bold;
   margin-bottom: 8px;
   font-size: 1rem;
 }
 
 .resposta {
-  color: #555;
+  color: #8b4033;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -41,9 +59,17 @@
 
 .duvida{
     text-align: left;
-    color:rgb(42, 42, 110);
+    color:#8b4033;
     font-weight: bold;
     font-size: 15px;
+}
+
+textarea {
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px ;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
 .enviar {
@@ -52,11 +78,10 @@
     border: 1px solid;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 10px;
     border: none;
     cursor: pointer;
     width: 200px;
     margin: 0 auto;
-    background-color: rgb(73, 73, 87);
+    background-color: #8b4033;
     color:white;
 }
