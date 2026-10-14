@@ -7,7 +7,7 @@ export default function index() {
     <main className='container-principal'>
       <section className='secao-home'>
         
-        <div className='hero-banner'>
+        <div className='banner'>
           <img 
             src={'https://hubconteudo.dasa.com.br/wp-content/uploads/2022/11/muay_thai.jpg'} 
             alt="Muay Thai" 
@@ -24,7 +24,7 @@ export default function index() {
           <p className='paragrafoDois'>Aulas completas para todos os níveis, do iniciante ao avançado, com foco na técnica, saúde e disciplina.</p>
           
           <p className='paragrafoUm'>Disciplina, Técnica e Superação</p>
-          <p className='paragrafoDois'>"O Muay Thai não ensina você a buscar o combate, mas a não se curvar quando ele for inevitável. Quando você pisa no tatame ou sobe no ringue, não está ali para provar algo aos outros, mas para confrontar seus próprios medos, sua preguiça e suas incertezas. A arte das oito armas é a disciplina de transformar o corpo em fortaleza e a mente em escudo."</p>
+          <p className='paragrafoDois'>O Muay Thai não ensina você a buscar o combate, mas a não se curvar quando ele for inevitável. Quando você pisa no tatame ou sobe no ringue, não está ali para provar algo aos outros, mas para confrontar seus próprios medos, sua preguiça e suas incertezas. A arte das oito armas é a disciplina de transformar o corpo em fortaleza e a mente em escudo.</p>
         </div>
 
         <div className='container-boxes'>

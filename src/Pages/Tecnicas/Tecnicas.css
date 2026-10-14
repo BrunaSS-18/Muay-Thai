@@ -49,10 +49,13 @@
 
 .box-treinamento-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanhos iguais */
-    gap: 20px;                             /* Espaçamento entre os cartões */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;                            
     width: 100%;
-    max-width: 900px;                      /* Largura máxima centralizada */
-    margin: 0 auto;
+    max-width: 800px;                      
+    margin: 0 auto 40px auto;
     margin-bottom: 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+    justify-content: center;
 }
