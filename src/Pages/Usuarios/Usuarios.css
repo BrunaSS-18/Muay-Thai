@@ -8,7 +8,7 @@
 
 .descricaoUsuarios {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 40px;
     margin-bottom: 20px;
     color: #8b4033;
     font-size: 15px;
@@ -33,6 +33,8 @@
     color: #0a0a0a;
     line-height: 1.8;
     text-transform: uppercase;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 .content-usuarios strong {

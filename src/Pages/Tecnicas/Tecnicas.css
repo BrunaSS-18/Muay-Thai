@@ -32,9 +32,14 @@
     box-sizing: border-box;
 }
 
+.faixa-categoria {
+    margin-top: 65px;
+}
+
 .box-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    place-items: center;
 }
 
 .tituloPrincipal {
@@ -50,12 +55,15 @@
 .box-treinamento-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;                            
-    width: 100%;
-    max-width: 800px;                      
+    gap: 35px;                            
+    width: 100%;                     
     margin: 0 auto 40px auto;
     margin-bottom: 20px;
     align-items: stretch;
     box-sizing: border-box;
     justify-content: center;
+}
+
+.tecnicas-header{
+    margin-top: 50px;
 }

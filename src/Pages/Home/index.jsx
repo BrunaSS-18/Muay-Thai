@@ -1,6 +1,9 @@
 import Box from "../../Components/Box"
-import img1 from "../../assets/img/icons/tik-tok.png"
 import "./Home.css"
+
+import img1 from "../../assets/imgGolpes/imgTeep.jpg"
+import img2 from "../../assets/imgGolpes/imgAparador.jpg"
+import img3 from "../../assets/imgGolpes/imgCotovelada.png"
 
 export default function index() {
   return (
@@ -37,13 +40,13 @@ export default function index() {
           <Box
             title=""
             description="A canelada calejada não vem do talento, vem de milhares de repetições no silêncio do treino diário."
-            img={img1}
+            img={img2}
           />
 
           <Box
             title=""
             description="Mais do que calejamento físico, a Arte das Oito Armas constrói uma mente blindada contra a desistência."
-            img={img1}
+            img={img3}
           />
         </div>
         

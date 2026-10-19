@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import "./Nav.css"
-import imgLogo from "../../assets/imgLogo.jpg"
+import imgLogo from "../../assets/imgGolpes/imgLogo.jpg"
 
 export default function index() {
     return (

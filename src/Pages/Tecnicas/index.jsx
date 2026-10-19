@@ -1,7 +1,16 @@
 import Box from "../../Components/Box"
 import BoxTreinamento from "../../Components/BoxTreinamento"
-import img1 from "../../assets/img/icons/tik-tok.png"
 import "./Tecnicas.css"
+
+import img1 from "../../assets/imgGolpes/teep.png";
+import img2 from "../../assets/imgGolpes/low-kick.png"
+import img3 from "../../assets/imgGolpes/high-kick.png"
+import img4 from "../../assets/imgGolpes/jab.png"
+import img5 from "../../assets/imgGolpes/cruzado.jpeg"
+import img6 from "../../assets/imgGolpes/upper.png"
+import img7 from "../../assets/imgGolpes/joelhada-clinch.png"
+import img8 from "../../assets/imgGolpes/cotovelada.png"
+import img9 from "../../assets/imgGolpes/frontal.png"
 
 export default function index() {
   return (
@@ -25,13 +34,13 @@ export default function index() {
             />
             <Box
                 title="Low Kick"
-                description="Golpe de perna baixa usado para atacar o tronco do adversário, realizado com a perna flexionada e o pé apontado para frente."
-                img={img1}
+                description="Golpe de perna baixa usado para atacar o tronco do adversário, deve ser realizado com a perna flexionada e o pé apontado para frente."
+                img={img2}
             />
             <Box
                 title="High Kick"
                 description="Golpe de perna alta usado para atacar a cabeça ou o tronco do adversário, realizado com a perna estendida e o pé apontado para cima."
-                img={img1}
+                img={img3}
             />
         </div>
 
@@ -43,17 +52,17 @@ export default function index() {
             <Box
                 title="Jab"
                 description="Golpe de punho frontal, geralmente é usado para manter a distância do adversário e criar oportunidades de ataque."
-                img={img1}
+                img={img4}
             />
             <Box
-                title="Direto"
-                description="Golpe de punho direto, geralmente desferido com a mão traseira, visando atingir o adversário com força e precisão."
-                img={img1}
+                title="Cruzado"
+                description="É um soco curvo, focado em atingir as laterais da cabeça ou a linha de cintura do oponente, contornando a guarda frontal."
+                img={img5}
             />
             <Box
                 title="Uppercut"
                 description="Golpe de punho ascendente, usado para atingir o queixo do adversário, geralmente desferido de baixo para cima."
-                img={img1}
+                img={img6}
             />
         </div>
 
@@ -65,17 +74,17 @@ export default function index() {
             <Box
                 title="Joelhada em Clinch"
                 description="Executada durante o domínio do pescoço do adversário, aplicando joelhadas potentes na zona das costelas e tronco."
-                img={img1}
+                img={img7}
             />
             <Box
                 title="Cotovelo"
                 description="Golpe de cotovelo, usado para atingir o tronco ou a cabeça do adversário, geralmente desferido com força e precisão."
-                img={img1}
+                img={img8}
             />
             <Box
                 title="Joelhada Frontal"
-                description="Golpe de joelho desferido frontalmente, usado para atingir o tronco ou a cabeça do adversário, realizado com força e precisão."
-                img={img1}
+                description="Golpe de joelho desferido frontalmente, usado para atingir o tronco ou a cabeça do adversário."
+                img={img9}
             />
         </div>
 

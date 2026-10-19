@@ -1,5 +1,5 @@
 import "./Footer.css"
-import imgLogo from "../../assets/imgLogo.jpg"
+import imgLogo from "../../assets/imgGolpes/imgLogo.jpg";
 import img1 from "../../assets/img/icons/instagram.png"
 import img2 from "../../assets/img/icons/facebook.png"
 
