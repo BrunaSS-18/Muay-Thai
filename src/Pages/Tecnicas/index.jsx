@@ -6,7 +6,7 @@ import img1 from "../../assets/imgGolpes/teep.png";
 import img2 from "../../assets/imgGolpes/low-kick.png"
 import img3 from "../../assets/imgGolpes/high-kick.png"
 import img4 from "../../assets/imgGolpes/jab.png"
-import img5 from "../../assets/imgGolpes/cruzado.jpeg"
+import img5 from "../../assets/imgGolpes/cruzado.jpg"
 import img6 from "../../assets/imgGolpes/upper.png"
 import img7 from "../../assets/imgGolpes/joelhada-clinch.png"
 import img8 from "../../assets/imgGolpes/cotovelada.png"
