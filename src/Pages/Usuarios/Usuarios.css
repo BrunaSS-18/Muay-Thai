@@ -58,8 +58,3 @@
     cursor: pointer;
     transition: 0.2s;
 }
-
-.delete:hover {
-    background-color: #8b4033;
-    transform: translateY(-1px);
-}

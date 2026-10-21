@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 export default function Index() {
     const [duvidas, setDuvidas] = useState([])
-    const [textoDuvida, setTextoDuvida] = useState('') // Estado do campo de texto
+    const [textoDuvida, setTextoDuvida] = useState('')
 
     useEffect(() => {
         fetch("http://localhost:3000/duvidas")
@@ -14,9 +14,9 @@ export default function Index() {
     }, [])
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
 
-        if (!textoDuvida.trim()) return;
+        if (!textoDuvida.trim()) return
 
         fetch("http://localhost:3000/duvidas", {
             method: "POST",
@@ -25,10 +25,10 @@ export default function Index() {
         })
         .then((res) => res.json())
         .then((novaDuvida) => {
-            setDuvidas([...duvidas, novaDuvida]);
-            setTextoDuvida(''); // LIMPA O TEXTO AQUI
+            setDuvidas([...duvidas, novaDuvida])
+            setTextoDuvida('')
         })
-        .catch((err) => console.error(err));
+        .catch((err) => console.error(err))
     }
 
     return (
@@ -53,8 +53,8 @@ export default function Index() {
                     rows="5" 
                     cols="40" 
                     required
-                    value={textoDuvida} // Conecta ao state
-                    onChange={(e) => setTextoDuvida(e.target.value)} // Atualiza o state ao digitar
+                    value={textoDuvida} 
+                    onChange={(e) => setTextoDuvida(e.target.value)}
                 ></textarea>
                 <button type="submit" className="enviar">Enviar</button>
             </form>

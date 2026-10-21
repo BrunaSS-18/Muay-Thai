@@ -4,7 +4,6 @@ import '../../../node_modules/react-toastify/dist/ReactToastify.css'
 import "./Cadastro.css"
 
 export default function index() {
-  //Estado para armazenar os dados do formulário
   
   const[formData, setFormData] = useState({
     nome: "",
@@ -12,29 +11,27 @@ export default function index() {
     email: ""
   })
 
-  //Função para atualizar o estado ao digitar o formulário
+  //atualiza o estado ao digitar o formulário
   const handleChange = (e) =>{
-    //Obter o elemento de entrada atual
     const { name, value } = e.target;
-    //Extrair o valor e o nome do campo de entrada
+    //extrair o valor
     setFormData((prevFormData) => ({
         ...prevFormData,
         [name]: value
     }))
   }
 
-  //Função para enviar o formulário
+  //enviar
   const handleSubmit = (e) => {
     e.preventDefault()
 
-  //Validação dos campos
+  //validação dos campos
   if(formData.nome == "" || formData.telefone == "" || formData.email == "" ){
-    //alert("Todos os campos são obrigatórios!")
-    toast.error("Todos os campos são obrigatórios!") //toast é um alerta de forma bonita
+    toast.error("Todos os campos são obrigatórios!")
     return false
   }  
     
-  //Enviando os dados para o backend como JSON
+  //dados para o backend como JSON
     fetch("http://localhost:3000/usuarios", {
         method: "POST",
         headers: {
@@ -45,7 +42,7 @@ export default function index() {
         .then((response) => response.json())
         .then((data) => {
             toast.success("Usuário cadastrado com sucesso")
-        //Limpa o formulario após o envio
+        //limpa o formulario após o envio
             setFormData({
                 nome: "",
                 telefone: "",

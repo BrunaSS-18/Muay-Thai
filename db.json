@@ -1,12 +1,6 @@
 {
   "usuarios": [
     {
-      "nome": "kauana ",
-      "telefone": "943196323",
-      "email": "kauana@gmail.com",
-      "id": "zU1QB9bez6o"
-    },
-    {
       "nome": "bruna",
       "telefone": "943196323",
       "email": "bruna@gmail.com",
@@ -17,6 +11,12 @@
       "telefone": "934597275",
       "email": "luiza@email.com",
       "id": "jD7kfUpaCRQ"
+    },
+    {
+      "nome": "kauana ",
+      "telefone": "11943196323",
+      "email": "kauana@gmail.com",
+      "id": "k0Jz2mOBLhk"
     }
   ],
   "duvidas": [
@@ -36,6 +36,5 @@
       "resposta": "O som que os praticantes fazem (como um sopro forte) serve para expulsor o ar dos pulmões no momento do impacto. Isso evita que o atleta fique sem fôlego caso receba um contragolpe enquanto ataca, além de ajudar a contrair a musculatura do abdómen para gerar mais força e manter a guarda firme."
     }
   ],
-  
   "$schema": "./node_modules/json-server/schema.json"
 }
